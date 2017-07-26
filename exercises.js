@@ -104,6 +104,9 @@ function sumUserPostLikes(user) {
     //each post object has an integer property called 'likes'
     //sum together the likes from all the post objects
     //return the sum
+    return user.posts
+        .map(function(p) { return p.likes; })
+        .reduce(function(acc, cv) { return acc + cv; })
 }
 
 function addCalculateDiscountPriceMethod(storeItem) {
