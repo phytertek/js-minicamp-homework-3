@@ -38,6 +38,8 @@ function multiplyMysteryNumberByFive(mysteryNumberObject) {
 function deleteProperty(object, property) {
     //remove the property from the object
     //return the object
+    delete object[property];
+    return object;
 }
 
 function newUser(name, email, password) {
