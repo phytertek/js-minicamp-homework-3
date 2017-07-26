@@ -26,12 +26,13 @@ function invokeMethod(object, method) {
     //method is a string that contains the name of a method on the object
     //invoke this method
     //nothing needs to be returned
-    object[method]()
+    object[method]();
 }
 
 function multiplyMysteryNumberByFive(mysteryNumberObject) {
     //mysteryNumberObject has a property called mysteryNumber
     //multiply the mysteryNumber property by 5 and return the product
+    return mysteryNumberObject['mysteryNumber'] * 5;
 }
 
 function deleteProperty(object, property) {
