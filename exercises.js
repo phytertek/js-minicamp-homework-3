@@ -62,12 +62,14 @@ function hasProperty(object, property) {
     //return true if the object has the value of the property argument
     //property is a string
     //otherwise return false
+    return object[property] ? true : false;
 }
 
 function verifyPassword(user, password) {
     //check to see if the provided password matches the password property on the user object
     //return true if they match
     //otherwise return false
+    return user.password === password;
 }
 
 function updatePassword(user, newPassword) {
